@@ -168,7 +168,7 @@ def handle_quiz():
     data = load_data()
 
     if username not in data:
-        return "Student not found."
+        return "Student not found in our database."
 
     # Retrieve the student's MCQs
     mcqs = data[username]['mcqs'][:3]  # Adjust if necessary
